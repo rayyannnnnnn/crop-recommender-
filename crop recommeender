@@ -35,6 +35,11 @@ if st.button("Predict Crop"):
     input_data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
     prediction = model.predict(input_data)
     st.success(f"✅ Recommended Crop: **{prediction[0].capitalize()}**")
+streamlit
+pandas
+numpy
+scikit-learn
+
 
     acc = accuracy_score(y_test, model.predict(X_test))
     st.info(f"🔍 Model Accuracy (test set): {acc:.2f}")
